@@ -1,0 +1,21 @@
+ def make_doors(self):
+        i = 0
+        if "North" in dirs[index]:
+            n = Exit("North",tradat[index][i])
+            self.add_exit(n)
+            self.nav += "North "
+            i += 1
+        if "East" in dirs[index]:
+            e = Exit("East",tradat[index][i])
+            self.add_exit(e)
+            self.nav += "East "
+            i += 1    
+        if "South" in dirs[index]:
+            s = Exit("South",tradat[index][i])
+            self.add_exit(s)
+            self.nav += "South "
+            i += 1
+        if "West" in dirs[index]:
+            w = Exit("West",dirs[index][i])
+            self.add_exit(w)
+            self.nav += "West
